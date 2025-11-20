@@ -1,7 +1,7 @@
 
 
 
-def split_before_uppercases(formula):
+def split_before_each_uppercases(formula):
     if not formula:
         return []
     parts = []
@@ -13,7 +13,7 @@ def split_before_uppercases(formula):
     parts.append(formula[start:])
     return parts
 
-def split_at_digit(formula):
+def split_at_first_digit(formula):
     for i in range(len(formula)):
         if formula[i].isdigit():
             prefix = formula[:i]
